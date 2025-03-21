@@ -1,12 +1,14 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
     padding: 1rem 0;
 }
 
@@ -14,17 +16,24 @@ nav ul {
     list-style: none;
     text-align: center;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
 }
 
 main {
@@ -34,11 +43,47 @@ main {
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
 footer {
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
