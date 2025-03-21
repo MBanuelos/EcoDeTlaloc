@@ -61,6 +61,31 @@
       margin: 0.5rem 0 0;
       color: #cccccc;
     }
+    .cv-button-container {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .cv-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #00c6ff;
+      color: #111;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .cv-button:hover {
+      background-color: #00a0d1;
+      transform: scale(1.05);
+    }
+    .cv-button svg {
+      width: 1.2rem;
+      height: 1.2rem;
+      fill: currentColor;
+    }
   </style>
 </head>
 <body>
@@ -92,6 +117,13 @@
         <p>"El agua no sólo cae; también recuerda."</p>
         <p><em>"Water does not only fall; it also remembers."</em></p>
       </blockquote>
+
+      <div class="cv-button-container">
+        <a href="assets/cv/MarioBanuelos_CV.pdf" class="cv-button" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 10V3H7v7H4l6 6 6-6h-3zm-9 7h14v2H4v-2z"/></svg>
+          Ver CV / View CV
+        </a>
+      </div>
     </section>
 
     <section class="timeline">
