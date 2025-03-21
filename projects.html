@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco de Tlaloc – Proyectos / Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .projects-section {
+      max-width: 800px;
+      margin: 5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .projects-section h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #ffffff;
+    }
+
+    .project {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #00c6ff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      background-color: rgba(0, 198, 255, 0.08);
+    }
+
+    .project-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .project h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.5rem;
+      color: #00c6ff;
+    }
+
+    .project p {
+      margin: 0;
+      color: #d0d0d0;
+    }
+
+    .project a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio / Home</a></li>
+        <li><a href="about.html">Sobre / About</a></li>
+        <li><a href="journal.html">Reflexiones / Journal</a></li>
+        <li><a href="contact.html">Contacto / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="projects-page">
+    <section class="projects-section">
+      <h1>Proyectos / Projects</h1>
+      <a href="#lagrimas" class="project">
+        <div class="project-icon">💧</div>
+        <div>
+          <h2>Lágrimas del Futuro / Tears of the Future</h2>
+          <p>
+            Una serie de instalaciones multimedia que exploran el agua como memoria en un planeta seco.<br />
+            A multimedia installation series exploring water as memory on a dry planet.
+          </p>
+        </div>
+      </a>
+
+      <a href="#mapas" class="project">
+        <div class="project-icon">🗺️</div>
+        <div>
+          <h2>Mapas de Lluvia / Rain Maps</h2>
+          <p>
+            Cartografías poéticas de la empatía humana, inspiradas en códices antiguos y futuros imaginados.<br />
+            Poetic cartographies of human empathy, inspired by ancient codices and imagined futures.
+          </p>
+        </div>
+      </a>
+
+      <a href="#semillas" class="project">
+        <div class="project-icon">🎧</div>
+        <div>
+          <h2>Semillas Sonoras / Sonic Seeds</h2>
+          <p>
+            Composiciones de lluvia marciana que combinan sonido ambiental, poesía y ciencia ficción.<br />
+            Martian rain compositions blending ambient sound, poetry, and speculative science fiction.
+          </p>
+        </div>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
+
