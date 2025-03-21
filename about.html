@@ -30,6 +30,37 @@
       height: 150px;
       object-fit: cover;
     }
+    .timeline {
+      margin-top: 4rem;
+      padding: 2rem 0;
+      border-top: 1px solid #444;
+    }
+    .timeline h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #00c6ff;
+    }
+    .timeline-item {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.04);
+      border-left: 4px solid #00c6ff;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+    }
+    .timeline-item:hover {
+      transform: translateX(10px);
+      background-color: rgba(0, 198, 255, 0.1);
+    }
+    .timeline-item h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      color: #ffffff;
+    }
+    .timeline-item p {
+      margin: 0.5rem 0 0;
+      color: #cccccc;
+    }
   </style>
 </head>
 <body>
@@ -61,6 +92,25 @@
         <p>"El agua no sólo cae; también recuerda."</p>
         <p><em>"Water does not only fall; it also remembers."</em></p>
       </blockquote>
+    </section>
+
+    <section class="timeline">
+      <h2>Eventos / Timeline</h2>
+
+      <div class="timeline-item">
+        <h3>Marzo 2024 – Taller de Matemáticas y Empatía</h3>
+        <p>Un taller bilingüe enfocado en conectar las matemáticas con la justicia climática y el arte.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Junio 2024 – Exposición "Lluvia en Marte"</h3>
+        <p>Instalación colaborativa que explora la memoria del agua en paisajes marcianos.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Agosto 2024 – Lanzamiento del Archivo Digital de Tlaloc</h3>
+        <p>Una colección digital viva de historias, datos y expresiones creativas sobre agua y futuro.</p>
+      </div>
     </section>
   </main>
 </body>
